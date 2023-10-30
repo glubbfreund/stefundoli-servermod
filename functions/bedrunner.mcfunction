@@ -4,6 +4,24 @@
 #                                                                                                             #
 ###############################################################################################################
 #
+# 
+# Info über die Redstoneschaltung:
+#
+# COMMANDOBLOCK  <--------NEGATION---------LEITENDER
+# (mit bedrunner.mcfunction)                 BLOCK 
+# (wiederholt, bedingungslos, redston          ^
+# 				                               |
+# COMMANDOBLOCK								   | 
+# (mit evening.mcfunction)                     | 
+# (impuls, bedingungslos, redstone)            |
+# ^                                            |
+# |--SEITLICH------------------------------- COMP <--SEITLICH-- COMP <-------- LICHTSENSOR (DUNKEL)
+#                                              ^
+#                                              |
+#                                              |
+#                                       LICHTSENSOR (HELL)
+#
+#
 # Dieser Wert prüft, ob sich unter allen Spielern etwa -1.9 Blöcke ein Bett befindet um dann in der Tabelle bed
 # den Wert Spieler im Bett zu erhöhen. Der Reset dieses Wertes erfolgt im Sleepcounter Skript
 execute at @a if block ~~-1.9~ bed run scoreboard players add "§7§oSpieler im Bett " bed 1

@@ -10,6 +10,9 @@
 # Minutenfaktor       =    100
 # Dezimalfaktor       =     10
 #
+# Dieses Skript wird durch einen Commandoblock angesteuert. 
+# (wiederholend, bedingungslos, immer aktiv)
+#
 # Addiere 1 für den ingame Zeittick, ist aber unabhängig vom Rawcounter!
 # nur wenn kein Match läuft.
 execute if score "§o§7Match" matchvars matches 0 run time add 1

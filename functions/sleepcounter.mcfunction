@@ -4,6 +4,9 @@
 #                                                                                                             #
 ###############################################################################################################
 #
+# Dieses Skript wird durch einen Commandoblock angesteuert. 
+# (wiederholend, bedingungslos, immer aktiv)
+#
 # Reset des Wertes Momentane Spieler um dann diesen zu setzen. Es wird bei allen
 # Spielern der Befehl add 1 ausgeführt, damit der genannte Wert erhöht wird. 
 scoreboard players set "§7§oMomentane Spieler " bed 0
