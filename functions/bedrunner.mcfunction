@@ -9,7 +9,7 @@
 #
 # COMMANDOBLOCK  <--------NEGATION---------LEITENDER
 # (mit bedrunner.mcfunction)                 BLOCK 
-# (wiederholt, bedingungslos, redston          ^
+# (wiederholt, bedingungslos, redstone)        ^
 # 				                               |
 # COMMANDOBLOCK								   | 
 # (mit evening.mcfunction)                     | 
