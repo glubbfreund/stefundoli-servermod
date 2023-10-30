@@ -5,6 +5,28 @@
 #                                                                                                             #
 ###############################################################################################################
 #
+#
+# COMMANDOBLOCK: Impuls, bedingungslos, Redstone aktiviert 
+#
+# Infos zum Aufbau des Spiels:
+# 
+#         ZIELSCHEIBE
+#              |
+#    1. BLOCK MIT REDSTONE STAUB (1 Block unter der Zielscheibe) --------RS VERSTÄRKER------------> COMMANDOBLOCK (addarrow.mcfunction)
+#              |
+#             (..) 9x hintereinander 
+#              |
+#    9. BLOCK MIT REDSTONE STAUB (1 Block unter der Zielscheibe) --------RS VERSTÄRKER------------> COMMANDOBLOCK (matchloopxx.mcfunction) 
+#              |
+# REDSTONE LAMPE MIT REDSTONE STAUB (6x hintereinander und 1 Block unter Zielscheibe)
+#                                   (am Ende also zusammen mit Blöcken 15 Stück => 1x RS Signalstärke)
+#
+#
+#
+# 1 Knopf mit COMMANDOBLOCK (startgame.mcfunction) 
+# 1 Knopf mit COMMANDOBLOCK (endgame.mcfunction) 
+#
+#
 # In der Tabelle matchvars wird der Wert matches gepflegt, steht dieser auf 1, läuft bereits ein Match. 
 # hier wird also vor jedem Command dieser Zustand vorausgesetzt
 # Der Ton funktioniert noch nicht, und muss nochmals überarbeitet werden.

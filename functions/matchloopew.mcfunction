@@ -1,3 +1,13 @@
+###############################################################################################################
+#                                                                                                             #
+# Dieses Skript stellt den Gameloop für das Minigame bereit und Prüft die entsprechende Punktzahl der Spieler #
+# Leider ist dieses Skript aktuell noch doppelt vorhanden und unterscheidet sich nur dahingehend, wo dieses   #
+# im Spiel verwendet wird. Dies wird künftig behoben, soll aber eine Quick&Dirty lösung ermöglichen. Bei der  #
+# Verwendung ist auf die Himmelsrichtung des Spielfeldes Rücksicht zu nehmen.                                 #
+# Dieses Skript wird bei Spielfeldern in Richtung Ost nach West verwendet.
+#                                                                                                             #
+###############################################################################################################
+#
 execute if block ~-1 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[hasitem={item=bow,location=slot.weapon.mainhand}] playermatch 1
 execute if block ~-2 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[hasitem={item=bow,location=slot.weapon.mainhand}] playermatch 1
 execute if block ~-3 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[hasitem={item=bow,location=slot.weapon.mainhand}] playermatch 1
