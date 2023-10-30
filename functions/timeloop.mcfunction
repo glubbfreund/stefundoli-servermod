@@ -11,7 +11,7 @@
 # Dezimalfaktor       =     10
 #
 # Dieses Skript wird durch einen Commandoblock angesteuert. 
-# (wiederholend, bedingungslos, immer aktiv)
+# (wiederholend, bedingungslos, immer aktiv, Tick Verzögerung=3)
 #
 # Addiere 1 für den ingame Zeittick, ist aber unabhängig vom Rawcounter!
 # nur wenn kein Match läuft.
