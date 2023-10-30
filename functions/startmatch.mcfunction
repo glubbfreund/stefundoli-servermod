@@ -28,7 +28,7 @@ execute unless score "§o§7Match" matchvars matches 1 run scoreboard players se
 execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7gezählte Pfeile" matchvars 0 
 # Wurf Nummer wird auch im AddArrow script gezählt, wird aber dem Spieler gezeigt. Hier kann der SPieler sehen, 
 # bei Welchem Wurf er ist, 1, 2, oder 3. 
-execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Wurf Nummer " playermatch 1 
+execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Pfeil Nummer " playermatch 1 
 # Rundengröße berechnet, wie groß eine Runde ist. Startwert ist 3, welcher als Berechnungsgrundlage dient. 
 # Berechnung erfolgt anschließend in AddArrow und wird mit der Spielerzahl multipliziert. (bsp. 2 mal 3 bedeutet Rundengröße 6 Pfeile)
 execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Rundengröße " matchvars 3 
