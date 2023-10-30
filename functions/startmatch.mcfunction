@@ -21,17 +21,20 @@ execute unless score "§o§7Match" matchvars matches 1 run scoreboard players ad
 # und hier erhöhen wir den Spielerzähler bei jedem Spieler der sich im Umkreis von 4 Blöcken befindet um 1
 execute at @a[r=4] unless score "§o§7Match" matchvars matches 1 run scoreboard players add "§o§7Spieler" matchvars 1 
 # Hier wird der Wert Runde Nummer in die sichtbare Tabelle eingetragen damit die Spieler wissen, die 
-# wie vielte "Runde" gespielt wurde, sprich wie oft jeder Spieler dran war. Die Berechnung des Wertes erfolgt 
-# im Matchloop
-execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Runde Nummer " playermatch 1 
+# wie vielte "Runde" gespielt wurde, sprich wie oft jeder Spieler dran war. 
+# Die Berechnung des Wertes erfolgt im Matchloop
+execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Runde " playermatch 1 
 # Wie viele Pfeile wurden geworfen? Versteckter Wert, welcher im AddArow script gezählt wird
 execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7gezählte Pfeile" matchvars 0 
 # Wurf Nummer wird auch im AddArrow script gezählt, wird aber dem Spieler gezeigt. Hier kann der SPieler sehen, 
 # bei Welchem Wurf er ist, 1, 2, oder 3. 
-execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Pfeil Nummer " playermatch 1 
+execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Pfeil " playermatch 1 
 # Rundengröße berechnet, wie groß eine Runde ist. Startwert ist 3, welcher als Berechnungsgrundlage dient. 
 # Berechnung erfolgt anschließend in AddArrow und wird mit der Spielerzahl multipliziert. (bsp. 2 mal 3 bedeutet Rundengröße 6 Pfeile)
 execute unless score "§o§7Match" matchvars matches 1 run scoreboard players set "§o§7Rundengröße " matchvars 3 
+# Anschließend multiplizieren wir diesen Wert mit der Anzahl der Spieler, 
+# dieser Wert wurde im Skript StartMatch initialisiert (3, weil 3 pro Spieler) 
+execute unless score "§o§7Match" matchvars matches 1 run scoreboard players operation "§o§7Rundengröße " matchvars *= "§o§7Spieler" matchvars  
 # Der Siegerwert, wird im Matchloop benötigt um den Sieger versteckt (matchvars) zu tracken 
 execute unless score "§o§7Match" matchvars matches 1 run scoreboard players add "§o§7Sieger" matchvars 0
 # Playermatch soll sichtbar sein, daher muss dieser nun angezeigt werden 
