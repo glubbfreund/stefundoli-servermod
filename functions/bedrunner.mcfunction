@@ -31,4 +31,4 @@ execute if score "§7§oMomentane Spieler " bed = "§7§oSpieler im Bett " bed r
 # Setze zudem die unabhängige Uhrzeit auf 24.000 (6 Uhr), original Minecraft Zeit wäre aber 23.000 (5 Uhr)
 execute if score "§7§oMomentane Spieler " bed = "§7§oSpieler im Bett " bed run scoreboard players set "§o§7Rawcounter " clock 24000 
 # Nun sende an alle Spieler ein Guten Morgen
-execute if score "§7§oMomentane Spieler " bed = "§7§oSpieler im Bett " bed run titleraw @a title {"rawtext":[{"text":"§l§6Guten Morgen!"}]}
+execute if score "§7§oMomentane Spieler " bed = "§7§oSpieler im Bett " bed run titleraw @a title {"rawtext":[{"text":"§6Guten Morgen!"}]}
