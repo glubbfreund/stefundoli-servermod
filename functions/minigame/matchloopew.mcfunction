@@ -33,12 +33,12 @@
 # Im ersten Block werden die Redstone Lampen geprüft die sich relativ zum Commandoblock an der entsprechenden
 # Stelle befinden und anhand der Zielscheibe und der Redstone Stärke angesprochen werden
 # Dabei wird geprüft welcher der Spieler den Bogen in der Hand hat
-execute if block ~-1 ~1 ~-2 lit_redstone_lamp run scoreboard players add @a[x=~7,y=~1,z=~-2, r=1] playermatch 1
-execute if block ~-2 ~1 ~-2 lit_redstone_lamp run scoreboard players add @a[x=~7,y=~1,z=~-2, r=1] playermatch 1
-execute if block ~-3 ~1 ~-2 lit_redstone_lamp run scoreboard players add @a[x=~7,y=~1,z=~-2, r=1] playermatch 1
-execute if block ~-4 ~1 ~-2 lit_redstone_lamp run scoreboard players add @a[x=~7,y=~1,z=~-2, r=1] playermatch 1
-execute if block ~-5 ~1 ~-2 lit_redstone_lamp run scoreboard players add @a[x=~7,y=~1,z=~-2, r=1] playermatch 1
-execute if block ~-6 ~1 ~-2 lit_redstone_lamp run scoreboard players add @a[x=~7,y=~1,z=~-2, r=1] playermatch 1
+execute if block ~-1 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[x=~7,y=~1,z=~-2, r=1] playermatch 1
+execute if block ~-2 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[x=~7,y=~1,z=~-2, r=1] playermatch 1
+execute if block ~-3 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[x=~7,y=~1,z=~-2, r=1] playermatch 1
+execute if block ~-4 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[x=~7,y=~1,z=~-2, r=1] playermatch 1
+execute if block ~-5 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[x=~7,y=~1,z=~-2, r=1] playermatch 1
+execute if block ~-6 ~1 ~-2 lit_redstone_lamp run scoreboard players add @p[x=~7,y=~1,z=~-2, r=1] playermatch 1
 # Nun alle Spieler, wieder mit ensprechender Prüfung der Redstonelampen zuvor im Umkreis von 40 Blöcken informieren
 execute if block ~-1 ~1 ~-2 lit_redstone_lamp run title @a[r=40] actionbar §g1 Punkt 
 execute if block ~-2 ~1 ~-2 lit_redstone_lamp run title @a[r=40] actionbar §g2 Punkte
@@ -46,12 +46,12 @@ execute if block ~-3 ~1 ~-2 lit_redstone_lamp run title @a[r=40] actionbar §g3 
 execute if block ~-4 ~1 ~-2 lit_redstone_lamp run title @a[r=40] actionbar §g4 Punkte 
 execute if block ~-5 ~1 ~-2 lit_redstone_lamp run title @a[r=40] actionbar §g5 Punkte 
 execute if block ~-6 ~1 ~-2 lit_redstone_lamp run title @a[r=40] actionbar §g6 Punkte 
-# Bei hohen Punktzahlen geben wir XP und einen entsprechenden Ton an den Jeweiligen Spieler aus
-execute as @a[x=~7,y=~1,z=~-2, r=1] if block ~-4 ~1 ~-2 lit_redstone_lamp run xp 1 @a[x=~7,y=~1,z=~-2, r=1]
-execute as @a[x=~7,y=~1,z=~-2, r=1] if block ~-5 ~1 ~-2 lit_redstone_lamp run xp 2 @a[x=~7,y=~1,z=~-2, r=1]
-execute as @a[x=~7,y=~1,z=~-2, r=1] if block ~-6 ~1 ~-2 lit_redstone_lamp run xp 3 @a[x=~7,y=~1,z=~-2, r=1] 
-execute as @a[x=~7,y=~1,z=~-2, r=1] if block ~-4 ~1 ~-2 lit_redstone_lamp run playsound random.orb @a[x=~7,y=~1,z=~-2, r=1]
-execute as @a[x=~7,y=~1,z=~-2, r=1] if block ~-5 ~1 ~-2 lit_redstone_lamp run playsound random.orb @a[x=~7,y=~1,z=~-2, r=1] 
-execute as @a[x=~7,y=~1,z=~-2, r=1] if block ~-6 ~1 ~-2 lit_redstone_lamp run playsound random.orb @a[x=~7,y=~1,z=~-2, r=1] 
+# Bei hohen Punktzahlen geben wir XP und einen entsprechenden Tan an den Jeweiligen Spieler aus
+execute as @p[x=~7,y=~1,z=~-2, r=1] if block ~-4 ~1 ~-2 lit_redstone_lamp run xp 1 @p[x=~7,y=~1,z=~-2, r=1]
+execute as @p[x=~7,y=~1,z=~-2, r=1] if block ~-5 ~1 ~-2 lit_redstone_lamp run xp 2 @p[x=~7,y=~1,z=~-2, r=1]
+execute as @p[x=~7,y=~1,z=~-2, r=1] if block ~-6 ~1 ~-2 lit_redstone_lamp run xp 3 @p[x=~7,y=~1,z=~-2, r=1] 
+execute as @p[x=~7,y=~1,z=~-2, r=1] if block ~-4 ~1 ~-2 lit_redstone_lamp run playsound random.orb @p[x=~7,y=~1,z=~-2, r=1]
+execute as @p[x=~7,y=~1,z=~-2, r=1] if block ~-5 ~1 ~-2 lit_redstone_lamp run playsound random.orb @p[x=~7,y=~1,z=~-2, r=1] 
+execute as @p[x=~7,y=~1,z=~-2, r=1] if block ~-6 ~1 ~-2 lit_redstone_lamp run playsound random.orb @p[x=~7,y=~1,z=~-2, r=1] 
 # Sollte der Score höher sein als der bisher höchste, den Sieger neu zuordnen 
-execute if score @a[x=~7,y=~1,z=~-2, r=1] playermatch > "§o§7Sieger" matchvars run scoreboard players operation "§o§7Sieger" matchvars = @a[x=~7,y=~1,z=~-2, r=1] playermatch 
+execute if score @p[x=~7,y=~1,z=~-2, r=1] playermatch > "§o§7Sieger" matchvars run scoreboard players operation "§o§7Sieger" matchvars = @p[x=~7,y=~1,z=~-2, r=1] playermatch 
