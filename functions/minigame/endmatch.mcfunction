@@ -49,6 +49,6 @@ scoreboard objectives remove playermatch
 scoreboard players reset "§o§7Spieler" matchvars 
 scoreboard players reset "§o§7Sieger" matchvars 
 scoreboard players reset "§o§7Rundengröße " matchvars 
-scoreboard players reset "§o§7gezählte Pfeile " matchvars 
+scoreboard players reset "§o§7gezählte Pfeile" matchvars 
 # Wichtig ist nun auch Match wieder auf 0 zu setzen, dies prüfen viele andere Skripte
 scoreboard players set "§o§7Match" matchvars 0
