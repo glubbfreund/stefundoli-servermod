@@ -2,7 +2,7 @@
 #                                                                                                             #
 # Evening script, dieses Prüft ob die "Bettgehzeit" und informiert die Spieler dementsprechend.               # 
 # Dies Skript wird u.a. mit Daylight Sensor bei entsprechender Lichtsituation über einen Kommandoblock        # 
-# und Redstone angesteuert und ist im eigentlichen Skript dementsprechend simpel.						      #
+# und Redstone angesteuert und ist im eigentlichen Skript dementsprechend simpel.                             #
 #                                                                                                             #
 ###############################################################################################################
 #
@@ -12,8 +12,8 @@
 # COMMANDOBLOCK  <--------NEGATION---------LEITENDER
 # (mit bedrunner.mcfunction)                 BLOCK 
 # (wiederholt, bedingungslos, redston          ^
-# 				                               |
-# COMMANDOBLOCK								   | 
+#                                              |
+# COMMANDOBLOCK                                | 
 # (mit evening.mcfunction)                     | 
 # (impuls, bedingungslos, redstone)            |
 # ^                                            |
