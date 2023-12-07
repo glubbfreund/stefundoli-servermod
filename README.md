@@ -13,4 +13,5 @@ Init with following commands after creating the redstone circuit (images and com
 /scoreboard players add "§o§7Stundenfaktor " clock 1000 
 /scoreboard players add "§o§7Minutenfaktor " clock 100 
 /scoreboard players add "§o§7Dezimalfaktor " clock 10 
+/scoreboard players add "§o§7Zeitfaktor " clock 6 
 /scoreboard players add "§o§7Match" matchvars 0 
