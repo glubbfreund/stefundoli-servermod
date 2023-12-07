@@ -12,7 +12,7 @@
 # COMMANDOBLOCK  <--------NEGATION---------LEITENDER
 # (mit bedrunner.mcfunction)                 BLOCK 
 # (wiederholt, bedingungslos, redston          ^
-#                                              |
+# (Vergögerung 95)                             |
 # COMMANDOBLOCK                                | 
 # (mit evening.mcfunction)                     | 
 # (impuls, bedingungslos, redstone)            |
