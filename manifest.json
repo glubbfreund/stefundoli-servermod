@@ -2,9 +2,9 @@
   "format_version": 2,
   "header": {
     "description": "Auch Creeper brennen bei Tageslicht, viele Mobs haben Angst vor Haustieren. Zusätzlich ist ein eigener Spielmodus, Tagesrhytmus, 24-Stunden Uhr und Schlaferkennung enthalten.",
-    "name": "StefUNDOlis Servermod 1.8.3",
+    "name": "StefUNDOlis Servermod 1.8.5",
     "uuid":"95870f39-1aed-42a7-af48-204bf7ae1e65",
-    "version": [1, 8, 3],
+    "version": [1, 8, 5],
     "min_engine_version": [1, 19, 50]
   },
   "modules":
@@ -13,7 +13,7 @@
           "description": "Auch Creeper brennen bei Tageslicht, viele Mobs haben Angst vor Haustieren. Zusätzlich ist ein eigener Spielmodus, Tagesrhythmus, 24-Stunden Uhr und Schlaferkennung enthalten.",
           "type": "data",
           "uuid": "49104fab-4f97-49b8-8872-bf6c073cbe1d",
-          "version": [1, 8, 3]
+          "version": [1, 8, 5]
       }
     ],
     "dependencies": [
