@@ -67,4 +67,4 @@ scoreboard players operation "§o§7StundenEiner " clock %= "§o§7Dezimalfaktor
 # Nun geben wir dauerhaft die Zeit bei jedem Spieler in der sog. "actionbar" aus, 
 # dies erfolgt aber ausschießlich wenn KEIN match stattfindet
 # hierbei werden die zuvor ermittelten Dezimalstellen EINZELN ausgegeben
-execute if score "§o§7Match" matchvars matches 0 run titleraw @a actionbar {"rawtext":[{"text":"§f\n\n\n\n"},{"score":{"name":"§o§7StundenZehner ","objective":"clock"}},{"score":{"name":"§o§7StundenEiner ","objective":"clock"}},{"text":":"},{"score":{"name":"§o§7MinutenZehner ","objective":"clock"}},{"score":{"name":"§o§7MinutenEiner ","objective":"clock"}}]}
+execute if score "§o§7Match" matchvars matches 0 run titleraw @a actionbar {"rawtext":[{"text":"§i\n\n\n\n\n\n\n\n\n\n\n\n                                                                                                               "},{"score":{"name":"§o§7StundenZehner ","objective":"clock"}},{"score":{"name":"§o§7StundenEiner ","objective":"clock"}},{"text":":"},{"score":{"name":"§o§7MinutenZehner ","objective":"clock"}},{"score":{"name":"§o§7MinutenEiner ","objective":"clock"}}]}
